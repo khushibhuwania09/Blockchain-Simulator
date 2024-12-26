@@ -1,23 +1,31 @@
-Distributed Blockchain Simulator
+# Distributed Blockchain Simulator
+
 A lightweight, Java-based project simulating blockchain functionality in a distributed system. This project is designed to explore blockchain concepts, implement secure communication, and detect/repair tampered blockchain data.
 
-Features
-Blockchain Simulation: Add, verify, and repair blocks in a blockchain.
-Distributed System: Implements client-server communication using TCP sockets.
-Secure Communication: RSA-based signing and verification for secure transactions.
-Tamper Detection: Automatically detect and repair tampered blockchain blocks.
-Extensible Design: Modular code structure for adding new blockchain functionalities.
-Installation
-Prerequisites
-Java JDK 8 or later
-Maven (for dependencies)
-Gson library (com.google.code.gson:gson:2.9.0)
-Setup Steps
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-username/distributed-blockchain-simulator.git
-cd distributed-blockchain-simulator
+---
+
+## Features
+
+- **Blockchain Simulation**: Add, verify, and repair blocks in a blockchain.
+- **Distributed System**: Implements client-server communication using TCP sockets.
+- **Secure Communication**: RSA-based signing and verification for secure transactions.
+- **Tamper Detection**: Automatically detect and repair tampered blockchain blocks.
+- **Extensible Design**: Modular code structure for adding new blockchain functionalities.
+
+---
+
+## Installation
+
+### Prerequisites
+- Java JDK 8 or later
+- Maven (for dependencies)
+- Gson library (`com.google.code.gson:gson:2.9.0`)
+
+### Setup Steps
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/distributed-blockchain-simulator.git
+   cd distributed-blockchain-simulator
 Add Dependencies: Include Gson in your pom.xml:
 xml
 Copy code
@@ -67,7 +75,7 @@ Copy code
   "message": "Transaction added successfully"
 }
 Project Structure
-bash
+plaintext
 Copy code
 /src
   ├── Blockchain/          # Core blockchain implementation
@@ -79,21 +87,3 @@ Copy code
   ├── ClientTCP.java       # TCP client implementation
   ├── VerifyingServerTCP.java  # RSA-secured server
   ├── SigningClientTCP.java    # RSA-secured client
-Contributing
-We welcome contributions! Follow these steps to contribute:
-
-Fork the repository.
-Create a new branch:
-bash
-Copy code
-git checkout -b feature/your-feature-name
-Commit your changes:
-bash
-Copy code
-git add .
-git commit -m "Add your feature"
-Push to your branch:
-bash
-Copy code
-git push origin feature/your-feature-name
-Open a Pull Request on the main repository.
